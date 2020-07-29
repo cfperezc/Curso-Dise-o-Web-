@@ -1,0 +1,151 @@
+:root{
+    --color:#66BFBF;
+}
+*{
+    padding: 0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #40514E;
+}
+
+
+h1{
+   margin-top: 50px auto 0 auto;   /*arriba 50px derecha auto abajo 0 izquierda auto*/
+   font-size:3.75em;
+   color: var(--color);
+   line-height: 2;
+
+}
+h2{
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--color);
+    margin: 15px auto 15px auto;
+    padding-bottom: 10px;
+}
+h3{
+    color: #11999E;
+}
+p{
+    line-height: 2;
+}
+hr{
+    border-style: dotted none none  none;
+    border-width: 5px;
+    width: 4%;
+    margin: 100px auto 100px auto ;
+    color: #EAF6F6;
+
+    
+}
+.top{
+    background-color: #cff1ef;
+    padding-top:80px;
+    position: relative;
+}
+.middle{
+    
+    margin: 100px 0;
+    padding: 30px;
+}
+.cambio{
+    width: 30%;
+    margin: auto;
+}
+.skills{
+    margin: 30px;
+    
+  
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+.contact-me{
+    margin: 40px;
+    padding: 15px;
+    line-height: 2;
+}
+.cambio2{
+    width: 40%;
+    margin: 40px auto;
+}
+.btn{
+    background-color:#66BFBF;
+    font-size: 30px;
+    padding: 5px 15px;
+    font-family:'Oswald', sans-serif;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    box-shadow: 1px 1px 6px 0px #000000;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:active{
+	background-color: #EAF6F6;
+}
+.bottom{
+    /*margin-top:50px;*/
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    /*height: 150px;*/
+}
+
+.nube-abajo{
+
+    position: absolute;
+}
+
+.nube-arriba{
+
+    position: absolute;
+    right: 420px ;
+    bottom: 550px;
+}
+.foto-perfil{
+    width: 10%;
+    border-radius: 100%;
+}    
+
+.pesas{
+    width: 25%;
+    float: left;   /*se uso solo en casos que necesitamos que se ajuste al texto pero no se debe usar mucho */
+    margin: auto 30px ;
+}
+.computador{
+    width: 25%;
+    float: right;
+    margin-left:30px ;
+}
+
+.habilidades{
+    text-align: left;
+}
+
+.footer-link{
+    text-decoration: none;
+    color:#11999E;
+    padding: 15px;
+    margin: 10px;
+}
+.footer-link:hover{
+    color: #EAF6F6;
+}
+.derechos{
+    color: #EAF6F6;
+    padding: 10px 0 5px;
+}
+
+.montaña{
+    margin-bottom: 0;
+    padding: 0;
+}
