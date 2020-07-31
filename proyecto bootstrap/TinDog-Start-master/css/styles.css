@@ -1,0 +1,126 @@
+#title{
+    background-color: #ff4c68;
+}
+.container-fluid{
+    padding: 3% 10%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: aliceblue;
+}
+h2{
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.celular{
+    transform: rotate(20deg);
+    width: 60%;
+}
+
+/* menu de navegacion*/
+
+.navbar{
+    padding: 0 0 4.5rem;
+
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+
+}
+
+.nav-item{
+    padding: 0 10px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    
+}
+
+/*seccion de features*/
+.negrita{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.color-iconos{
+    color: #ef8172;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.color-iconos:hover{
+    color: #ff4c68;
+    cursor: pointer;
+}
+
+.centrado{
+    text-align: center;
+    padding: 4.5%;
+}
+#features{
+    padding: 7% 15%;
+    margin: 20px;
+}
+
+.color-parrafos{
+    color: #8f8f8f;
+    
+}
+
+/*seccion de testimonios*/
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color:#ef8172 ;
+    color: #fff;
+}
+
+.imagen-perro{
+    border-radius:50%;
+    width: 10%;
+    margin: 20px;
+
+}
+
+.carousel-item{
+    padding: 7% 10%;
+}
+
+
+/* seccion de prensa*/
+
+#press{
+    background-color:#ef8172 ;
+    text-align: center;
+    padding-bottom: 3%;
+
+}
+
+.imagenes-prensa{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* seccion de precios */
+
+#pricing{
+    
+    text-align: center;
+}
+.margen-precios{
+    margin: 60px;
+}
+.columnas-precios{
+    padding: 3% 2%;  /*padding para separar los precios*/
+}
