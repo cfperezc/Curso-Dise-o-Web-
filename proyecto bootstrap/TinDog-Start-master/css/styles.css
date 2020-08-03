@@ -52,10 +52,18 @@ h2{
 }
 
 /*seccion de features*/
-.negrita{
+#features{
+    /*padding: 7% 15%;
+    margin: 20px;*/
     font-family: "Montserrat";
     font-size: 1.5rem;
     font-weight: 900;
+    color: #8f8f8f;
+    background-color: #fff;
+    text-align: center;
+    padding: 4.5%;
+    position: relative;
+    z-index: 1;
 }
 .color-iconos{
     color: #ef8172;
@@ -66,23 +74,6 @@ h2{
 .color-iconos:hover{
     color: #ff4c68;
     cursor: pointer;
-}
-
-.centrado{
-    text-align: center;
-    padding: 4.5%;
-}
-#features{
-    /*padding: 7% 15%;
-    margin: 20px;*/
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-}
-
-.color-parrafos{
-    color: #8f8f8f;
-    
 }
 
 /*seccion de testimonios*/
@@ -155,7 +146,18 @@ h2{
 
 /*Footer*/
 
-
+#footer{
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    background-color: #fff
+}
+#footer p{
+    color:#8f8f8f ;
+}
+.iconos-footer{
+    margin: 20px 10px;
+}
 
 /*media querys*/
 
