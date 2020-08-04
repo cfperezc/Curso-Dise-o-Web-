@@ -1,2 +1,2 @@
-# cv
-Practica básica de HTML de un curso 
+# Proyectos en base a curso de diseño web 
+varias practicas
