@@ -20,7 +20,7 @@ const valores = new mongoose.Schema({
     }
     
 });
-const Valor = mongoose.model("Valor",valores);   ///nueva coleccion con el nombre de valors , aunque se ponga valor
+const Valor = mongoose.model("Valor",valores);   ///nueva coleccion con el nombre de valors
 ///creando items de inicio o por defecto 
 
 const tarea1= new Valor({
@@ -83,13 +83,13 @@ app.post("/",function(req,res){      ///se crea un post ya que se obtendra valor
 
     
     const nuevaEntrada =req.body.item;          /// se obtiene el valor que proviene del input con el nombre llamado item
-    const nombreLista= req.body.lista;       /// se almacena el valor el boton de tipo submit + que agrega tareas 
+    const nombreLista= req.body.lista;       /// se almacena el valor el boton de tipo submit  que agrega tareas 
     
     const tareaNueva= new Valor({
         name:nuevaEntrada
     });
     
-    if(nombreLista=== "Hoy"){         /// se verifica la peticion de post hecha por el usuario viene con el titulo de la ruta base 
+    if(nombreLista=== "Hoy"){         /// se verifica la peticion de post hecha por el usuario viene con el titulo de la ruta base
         tareaNueva.save();
         res.redirect("/");
     }else{                                              ///si no lo es busca el nombre de la lista en la coleccion de listas , para asi crear un nuevo documento en la coleccion 
@@ -97,7 +97,7 @@ app.post("/",function(req,res){      ///se crea un post ya que se obtendra valor
         Lista.findOne({name:nombreLista},function(err,listaEncontrada){
             listaEncontrada.tareas.push(tareaNueva);
             listaEncontrada.save();
-            res.redirect("/" + nombreLista);    /// como es una ruta dinamica se concatena con el nombre de la lista que se obtiene del boton +
+            res.redirect("/" + nombreLista);    
         });
       
     }
@@ -121,7 +121,7 @@ app.post("/delete",function(req,res){
             });
         }else{
 
-            Lista.findOneAndDelete({name:listaNombre},{$pull:{tareas:{_id:tareaSeleccionada}}},function(err,doc){    ///como era un arreglo en la coleccion toco usar el metodo de pull para navegar en el JSON
+            Lista.findOneAndDelete({name:listaNombre},{$pull:{tareas:{_id:tareaSeleccionada}}},function(err,doc){    
                 
                 if(!err){
                     res.redirect("/" + listaNombre);    /// como es una ruta dinamica se concatena con el nombre de la lista que se obtiene del input hidden
