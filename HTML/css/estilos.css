@@ -1,0 +1,42 @@
+:root{
+    --color1:#66bfbf;
+    --color2:#2e8b57;
+}
+
+body {
+    background:#fff5ee;
+}
+
+hr {
+    background-color:#fff5ee ;
+    border-color: black;
+    border-style: none;
+    border-top-style:dotted;
+    border-width: 5px;
+    width: 6%;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+h1{
+    font-family: 'Times New Roman';
+    color: var(--color1);
+}
+h3{
+    font-family: sans-serif;
+    color: var(--color2);
+}
+
+p{
+    text-align: justify;
+}
+
+a:hover{
+
+    background-color:rgb(192, 240, 224);
+    color: black;
+
+}
