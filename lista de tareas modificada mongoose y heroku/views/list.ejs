@@ -1,0 +1,27 @@
+<%- include("header") -%> 
+
+    <div class="box" id="heading">
+        <h1><%= titulo %> </h1>
+    </div>    
+   
+    <div class="box">
+
+            <% nuevositems.forEach(function(nuevoitem){ %>
+                <form action="/delete" method="POST">      <!-- se crea un form para la ruta de eliminar tareas-->
+                    <div class="item">
+                        <input type="checkbox" onchange="this.form.submit()" value=<%= nuevoitem._id %>  name="seleccion">    <!-- se le da valoral checkbox con el id del elemnto que se selccione  ademas se le da codigo js en la propiedad onchange-->                                                                                                  
+                        <p> <%= nuevoitem.name %>  </p>
+                    </div>
+                    <input type="hidden" name="listaNombre" value=<%= titulo %> >
+                </form>
+            <% }) %>
+                
+            <form class="item" id="" action="/" method="POST">
+
+                <input type="text" name="item" id="" placeholder="nueva tarea" autocomplete="off">
+                <button type="submit" name="lista" value=<%= titulo  %>>+</button>
+                
+            </form>
+    </div>
+    
+<%- include("footer"); -%>
