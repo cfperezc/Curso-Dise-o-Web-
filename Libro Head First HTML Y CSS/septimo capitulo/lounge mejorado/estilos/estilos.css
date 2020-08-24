@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif;
+}
+
+img{
+    width: 30%;
+    
+}
+
+.tamaño{
+    width: 5%;
+}
+
+.blue{
+    width: 3%;
+}
+
+.red{
+    width: 3%;
+}
+
+.texto{
+    padding:25px;
+    
+}
+
+p{
+    color: maroon;
+}
+
+h1, h2{
+    
+    color: gray;
+}
+
+h1 {
+    border-bottom:1px solid #000;
+}
+
+.verde{
+    color: mediumseagreen;
+}
+
+.azulClaro{
+    color: blue;
+}
+
+.morado{
+    color: blueviolet;
+}
+.rojo{
+    color: crimson;
+}
