@@ -1,0 +1,145 @@
+body { 
+  background-color: #b5a789;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
+}
+
+#header {
+  background-color: #675c47;
+  margin: 10px 10px 0px 10px;
+  height:           108px;
+}
+
+#headerSlogan{
+  float: right;
+}
+
+#award {
+  position: absolute;
+  top: 30px;
+  left: 640px;
+}
+
+
+#main {
+  display: table-cell;   /*se esribe la propiedad de display table cell para meter en una celda este contenido */
+  background:       #efe5d0 url(images/background.gif) top left;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align: top;
+}
+
+#drinks{
+  display: table-cell;   /*se esribe la propiedad de display table cell para meter en una celda este contenido */
+  background:       #efe5d0 ;
+  width: 20%;
+  padding: 15px;
+  vertical-align: top;
+}
+
+#sidebar {          
+  display: table-cell;      /*se establece la propiedad de display cell para meter este contenido tambien en una celda*/
+  background:       #efe5d0 url(images/background.gif) bottom right;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align: top;
+}
+
+#footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin: 0px 10px 10px 10px;
+  font-size:        90%;
+}
+
+#coupon {
+  position: fixed;
+  top: 350px;
+  left: -90px;
+}
+
+#coupon a, img {
+  border: none;
+}
+
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+}
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}
+
+#tablecontainer {    /*se encierra en en un div principal que sera como el encabezado de la tabla y se usa la propiedad display*/
+  display: table;
+  border-spacing: 10px;
+}
+
+div#tablerow {          /*se establece otro contenedor que sera el encargado de la fila*/
+  display: table-row;
+}
+
+@media (max-width:320px){
+
+  #footer {
+    position: relative;
+    left: 120px;
+    width: 320px;
+  }
+  
+}
+
+@media (min-width:768px){
+  
+  #award {
+   
+    left: 340px;
+  }
+}
+
+@media (min-width:1024px){
+
+  #award {
+   
+    left: 500px;
+  }
+  
+}
+
+@media (min-width:1440px){
+
+  #award {
+   
+    left: 690px;
+  }
+  
+  
+}
+
+@media (min-width:2560px){
+
+  #award {
+   
+    left: 1280px;
+  }
+  
+  
+}
