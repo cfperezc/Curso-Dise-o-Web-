@@ -1,0 +1,14 @@
+.hover{
+    border: solid red 3px;
+    padding: 20px;
+}
+
+.no_hover{
+    border: solid #000 3px;
+    padding: 20px;
+}
+
+button {
+   
+    padding: 10px;
+}
