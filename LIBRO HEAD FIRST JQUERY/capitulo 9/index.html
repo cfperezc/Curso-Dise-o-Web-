@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header> 
+        <h2>2020 Race Finishers!</h2> 
+    </header> 
+    <div id="main">  
+        <ul class="idTabs">  <!--con el pluguin idTabs  se puede crear varias ventanas a partir de enlaces que las acomodan -->
+            <li><a href="#male">Male Finishers</a></li> 
+            <li><a href="#female">Female Finishers</a></li> 
+            <li><a href="#all">All Finishers</a></li>
+            <li><a href="#new">Add New Finisher</a></li>
+        </ul> 
+        <div id="male"> 
+            <h4>Male Finishers</h4> 
+             <ul id="finishers_m"></ul>
+        </div> 
+        <div id="female"> 
+            <h4>Female Finishers</h4>
+            <ul id="finishers_f"></ul>
+        </div>
+        <div id="all"> 
+            <h4>All Finishers</h4>
+            <ul id="finishers_all"></ul>
+        </div> 
+        <div id="new" >
+            <h4>Add New Finisher</h4>
+            <form id="addRunner" name="addRunner" action="service.php" method="POST">
+                First Name: <input type="text"  class="datos" name="txtFirstName" id="txtFirstName" /> <br>
+                Last Name: <input type="text" class="datos" name="txtLastName" id="txtLastName" /> <br>
+                Gender: <select id="ddlGender" name="ddlGender">
+                <option value="">--Please Select--</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+                </select><br>
+                Finish Time:
+                <input type="text"  class="tiempo" name="txtMinutes" id="txtMinutes" size="10" maxlength="2" /><p>Minutes</p>
+                <input type="text" class="tiempo" name="txtSeconds" id="txtSeconds" size="10" maxlength="2" /><P>Seconds</P>
+                <br><br>
+                <button type="submit" name="btnSave" id="btnSave">Add Runner</button>
+                <input type="hidden" name="action" value="addRunner" id="action">
+            </form> 
+        </div> 
+    </div>
+    <footer>
+        <h4>Congratulations to all our finishers!</h4>	
+        <span id="freq"></span>
+        <br>	
+        Last Updated: <div id="updatedTime"></div>
+        <button class="botones" id="btnStop">Stop Updates</button>
+        <button class="botones" id="btnStart">Start Updates</button>
+    </footer>
+
+
+    <!--<script src="script/jquery-3.5.1.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="script/code.js"></script>
+    <script src="script/jquery.idTabs.min.js"></script>
+   
+    
+</body>
+</html>
